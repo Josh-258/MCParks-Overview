@@ -1,0 +1,171 @@
+:root {
+  color-scheme: light;
+  --page-ink: #172b4d;
+  --page-blue: #07039D;
+  --page-yellow: #FFCC00;
+  --page-purple: #592DCC;
+  --page-pale-blue: #eef6fc;
+  --page-grey: #f5f7f9;
+  --page-white: #fff;
+}
+
+body {
+  color: var(--page-ink);
+}
+
+a, a:visited {
+  color: #0000EE;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 1000;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.75rem 1rem;
+  transform: translateY(-150%);
+  background: var(--page-white);
+  color: var(--page-ink);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  border-bottom: 1px solid #d8e0e8;
+  background: var(--page-white);
+}
+
+.navbar-brand,
+.nav-link, .nav-link:visited {
+  color: var(--page-ink);
+}
+
+.hero-section {
+  height: 365px;
+  background: url("img/CinderellaCastle.png") center / cover no-repeat;
+}
+
+.eyebrow {
+  color: var(--page-blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.welcome-card {
+  border: 1px solid #d1e2f1;
+  border-radius: 0.75rem;
+  background: var(--page-white);
+  box-shadow: 0 0.75rem 2rem rgb(23 43 77 / 8%);
+}
+
+.grey-section {
+  background: var(--page-grey);
+}
+
+.white-section {
+  background: var(--page-white);
+}
+
+.site-footer {
+  border-top: 1px solid #d8e0e8;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.btn-primary {
+  background: var(--page-blue);
+  border-color: var(--page-blue);
+  color: #FFF;
+}
+
+.btn-primary:hover {
+  background: var(--page-yellow);
+  border-color: var(--page-yellow);
+  color: #000;
+}
+
+hr.decorative {
+  --divider-top-color: var(--page-white);
+  --divider-bottom-color: var(--page-grey);
+
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin: 0;
+  border: 0;
+  opacity: 1;
+  background-image:
+    url("img/decorative-divider.svg"),
+    linear-gradient(
+      to bottom,
+      var(--divider-top-color) 50%,
+      var(--divider-bottom-color) 50%
+    );
+  background-position: center, center;
+  background-size: min(435px, 100%) auto, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+hr.decorative-reverse {
+  --divider-top-color: var(--page-grey);
+  --divider-bottom-color: var(--page-white);
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    color: gray;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+.imgbox-grey {
+  background: var(--page-grey);
+  border: 2px solid var(--page-grey);
+}
+
+.imgbox-white {
+  background: var(--page-white);
+  border: 2px solid var(--page-white);
+}
+
+.h2-img {
+  max-height: 28px;
+}
+
+@media (min-width: 992px) {
+  .imgbox {
+    padding: 1em;
+    margin: 0;
+  }
+    
+  .imgbox-grey {
+    background: var(--page-grey);
+    border: 2px solid var(--page-grey);
+  }
+
+  .imgbox-white {
+    background: var(--page-white);
+    border: 2px solid var(--page-white);
+  }
+}
